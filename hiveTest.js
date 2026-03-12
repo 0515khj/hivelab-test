@@ -59,8 +59,8 @@ uploadLeftList(leftData,$productList);
 uploadLeftList(rightData,$productListR);
 showLeftTab('하나더')
 showRightTab('베스트')
-initTabs($productLeft, showLeftTab)
-initTabs($productRight, showRightTab)
+initTabs(showLeftTab,$productLeft)
+initTabs(showRightTab,$productRight)
 
 
 

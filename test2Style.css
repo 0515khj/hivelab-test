@@ -1,0 +1,146 @@
+main {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.ibtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 50%;
+}
+.ibtn i {
+    color: #fff;
+    pointer-events: none;
+}
+
+.pop {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 15px 20px;
+    z-index: 10;
+}
+
+.pop.active {
+    display: block;
+}
+
+.pop .popTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.pop .popTitle p {
+    font-weight: bold;
+}
+.pop .popText {}
+.pop .popText li {
+    display: flex;
+    gap: 5px;
+    word-break: keep-all;
+}
+.pop .popText li:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+.pop .popText li::before {
+    display: block;
+    content: '·';
+
+}
+.delivery {
+}
+
+.delivery .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.delivery .title h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.delivery .title h3::before {
+    display: block;
+    content: '';
+    background-image: url('images/del.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+
+}
+.delivery .eta {
+    border: 1px solid #ddd;
+}
+
+.eta .etaTitle {
+    padding: 15px 20px;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+}
+.eta .etaTitle h3 {
+    color: #000;
+    font-weight: bold;
+}
+.eta .dayList {
+    display: flex;    
+    flex-direction: column; 
+    padding:  15px 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.eta .dayList .day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.eta .dayList .day span {
+    color: #999;
+}
+.eta .dayList .day .bar {
+    flex: 1;
+    height: 4px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.eta .dayList .day .bar .fill {
+    height: 100%;
+    background: #ccc;
+    border-radius: 4px;
+}
+.eta .dayList .active .bar .fill {
+    background: #42A5F5;
+}
+.eta .dayList .active span {
+    color: #42A5F5;
+}
+
+.coment {
+    color: #777;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.foldBtn i {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.foldBtn.fold i {
+    transform: rotate(180deg);
+}

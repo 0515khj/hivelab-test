@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="test2Style.css">
+    <title>지원자 김현진 과제2</title>
+</head>
+
+<body>
+
+    <div class="testBtn">
+        <div class="test1">
+            <a href="hivelabTest1.html">과제 1 (swiper)</a>
+        </div>
+        <div class="test2">
+            <a href="hivelabTest2.html">과제 2 (팝업)</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="delivery">
+
+            <div class="title">
+                <h3>오늘 9/21(수) 출발 예정 </h3>
+                <button class="ibtn"><i class="bi bi-exclamation popGo"></i></button>
+            </div>
+            <div class="pop">
+                <div class="popTitle">
+                    <p>배송안내</p>
+                    <button class="closeBtn">X</button>
+                </div>
+                <ul class="popText">
+                    <li>출발일과 도착일은 판매자, 택배사, 기상상황 등에 따라 달라질 수 있습니다.</li>
+                    <li>판매자 사정 또는 여러 상품을 함께 주문한 경우 출발 예정일이나 배송사가 변동 될 수 있습니다.</li>
+                </ul>
+            </div>
+            <div class="eta">
+                <div class="etaTitle">
+                    <h3>9/23(금)까지 도착 확률 86%</h3>
+                    <button class="foldBtn">접기 <span> <i class="bi bi-chevron-up up"></i> </span></button>
+                </div>
+                <div class="dayList">
+                    <div class="day thursday">
+                        <span>9/22(목) 도착</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 76%;"></div>
+                        </div>
+                        <span class="percent">76%</span>
+                    </div>
+                    <div class="day friday active">
+                        <span>9/22(금) 도착</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 86%;"></div>
+                        </div>
+                        <span class="percent">86%</span>
+                    </div>
+                    <div class="day saturday">
+                        <span>9/22(토) 도착</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 26%;"></div>
+                        </div>
+                        <span class="percent">26%</span>
+                    </div>
+                </div>
+                <p class="coment">배송 분석 시스템으로 예측되었습니다. <em>Beta</em></p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="hiveTest2.js"></script>
+
+</body>
+
+</html>

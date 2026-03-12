@@ -44,7 +44,7 @@ function showRightTab(tabName) {
     $moreBtnR.textContent = `${tabName} 상품 더보기`
 }
 
-function initTabs(section, showFn) {
+function initTabs(showFn,section) {
     section.querySelectorAll('.item').forEach(item => {
         item.addEventListener('mouseover', () => {
             section.querySelectorAll('.item').forEach(i => i.classList.remove('active'))
